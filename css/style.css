@@ -1,20 +1,162 @@
 @import url("https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Ubuntu:wght@400;500;700&display=swap");
-:root {
-  --clr-azul1: hsl(193, 68%, 57%);
-  --clr-azul2: hsl(201, 100%, 34%);
-  --clr-black: hsl(144,18%, 5%);
-  --clr-roxo: hsl(255,29%,28%);
-  --clr-roxo1: rgb(22, 18, 36);
-  --clr-white: hsl(0, 0%, 100%);
-  --ff-overpass: 'Overpass', sans-serif;
-  --fw-ov-300:300;
-  --fw-ov-600:600;
-  --ff-ubuntu: 'Ubuntu', sans-serif;
-  --fw-ubu-400:400;
-  --fw-ubu-500:500;
-  --fw-ubu-700:700;
+/*-----Formulario Header-------*/
+.form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  height: inherit;
 }
 
+.form__group {
+  position: relative;
+  padding: 15px 0 0;
+  margin-top: 10px;
+  width: 60%;
+}
+
+.form__field {
+  font-family: "Overpass", sans-serif;
+  width: 100%;
+  border: 0;
+  border-bottom: 2px solid #9b9b9b;
+  outline: 0;
+  font-size: 1.3rem;
+  margin-top: 20px;
+  color: white;
+  padding: 7px 0;
+  background: transparent;
+  -webkit-transition: border-color 0.2s;
+  transition: border-color 0.2s;
+}
+
+.form__field::-webkit-input-placeholder {
+  color: transparent;
+}
+
+.form__field:-ms-input-placeholder {
+  color: transparent;
+}
+
+.form__field::-ms-input-placeholder {
+  color: transparent;
+}
+
+.form__field::placeholder {
+  color: transparent;
+}
+
+.form__field:placeholder-shown ~ .form__label {
+  font-size: 1.1rem;
+  cursor: text;
+}
+
+.form__field:placeholder-shown ~ .nome__class {
+  top: 50px;
+}
+
+.form__field:placeholder-shown ~ .telefone__class {
+  top: 110px;
+}
+
+.form__label {
+  position: absolute;
+  display: block;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  font-size: .9rem;
+  color: #9b9b9b;
+  font-family: "Overpass", sans-serif;
+}
+
+.nome__class {
+  top: 20px;
+}
+
+.telefone__class {
+  top: 80px;
+}
+
+.form__field:focus {
+  padding-bottom: 6px;
+  font-weight: 700;
+  border-width: 3px;
+  -o-border-image: linear-gradient(to right, #47bcdc, #0071ad);
+     border-image: -webkit-gradient(linear, left top, right top, from(#47bcdc), to(#0071ad));
+     border-image: linear-gradient(to right, #47bcdc, #0071ad);
+  border-image-slice: 1;
+}
+
+.form__field:focus ~ .form__label {
+  position: absolute;
+  display: block;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  font-size: 1rem;
+  color: #0071ad;
+  font-weight: 700;
+}
+
+.form__field:focus ~ .nome__class {
+  top: 30px;
+}
+
+.form__field:focus ~ .telefone__class {
+  top: 90px;
+}
+
+.form__field:required, .form__field:invalid {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.center-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.center-button .button {
+  width: 50%;
+  height: 30px;
+  outline: 0;
+  border: 2px solid #47bcdc;
+  border-radius: 10px;
+  background: transparent;
+  color: #9b9b9b;
+  font-family: "Overpass", sans-serif;
+  font-size: 1rem;
+  margin-top: 10px;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.center-button .button:hover {
+  border: none;
+  background: #47bcdc;
+  color: #0a0f0c;
+}
+
+/*-----FIM FORMULARIO-----*/
 html {
   background: #483b53;
   background: linear-gradient(6deg, #483b53 43%, black 73%);
@@ -30,6 +172,46 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  /*.form-contato{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        margin-top: 80%;
+        .formulario{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+
+            label{
+                color: white;
+                font-family: var(--ff-overpass);
+            }
+            
+            
+           
+            input{
+                outline: 1px solid white;
+                height: 25px;
+                border-radius: 15px;
+                background-color: transparent;
+                margin: 2px;
+                color: var(--clr-white);
+                font-size: 1.2rem;
+                font-family: var(--ff-overpass);
+            }
+            
+            .nome, .tel{
+                width: 200px;
+            }
+            .button{
+                width: 70px;
+                height: 30px;
+            }
+            
+        }
+    }*/
 }
 
 header .nav-navbrand {
@@ -57,71 +239,16 @@ header .nav-navbrand .nav-brand {
 }
 
 header .nav-navbrand .nav-brand a {
-  color: var(--clr-azul2);
-  font-family: var(--ff-ubuntu);
+  color: #0071ad;
+  font-family: "Ubuntu", sans-serif;
 }
 
 header .nav-navbrand .nav-brand small {
   font-size: .7rem;
   text-align: center;
   display: block;
-  color: var(--clr-azul1);
-  font-family: var(--ff-ubuntu);
-}
-
-header .form-contato {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-top: 80%;
-}
-
-header .form-contato .formulario {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-header .form-contato .formulario label {
-  color: white;
-  font-family: var(--ff-overpass);
-}
-
-header .form-contato .formulario input {
-  outline: 1px solid white;
-  height: 25px;
-  border-radius: 15px;
-  background-color: transparent;
-  margin: 2px;
-  color: var(--clr-white);
-  font-size: 1.2rem;
-  font-family: var(--ff-overpass);
-}
-
-header .form-contato .formulario .nome, header .form-contato .formulario .tel {
-  width: 200px;
-}
-
-header .form-contato .formulario .button {
-  width: 70px;
-  height: 30px;
+  color: #47bcdc;
+  font-family: "Ubuntu", sans-serif;
 }
 
 header .capa {
@@ -141,10 +268,10 @@ header .capa {
 header h1 {
   font-size: 2rem;
   text-align: center;
-  color: var(--clr-white);
-  font-family: var(--ff-ubuntu);
+  color: white;
+  font-family: "Ubuntu", sans-serif;
   font-weight: 500;
-  color: var(--clr-white);
+  color: white;
 }
 
 header .menu {
@@ -162,7 +289,7 @@ main .wrap {
 main .wrap .container-servicos h1 {
   font-size: 2rem;
   color: white;
-  font-family: var(--ff-overpass);
+  font-family: "Overpass", sans-serif;
   font-weight: 500;
   text-align: center;
   margin-bottom: 30px;
@@ -206,11 +333,11 @@ main .wrap .container-servicos .servico .servico1 .img:hover, main .wrap .contai
 }
 
 main .wrap .container-servicos .servico .servico1 h3, main .wrap .container-servicos .servico .servico2 h3, main .wrap .container-servicos .servico .servico3 h3, main .wrap .container-servicos .servico .servico4 h3, main .wrap .container-servicos .servico .servico5 h3, main .wrap .container-servicos .servico .servico6 h3 {
-  background: var(--clr-roxo);
+  background: #3d335c;
   font-size: 1.2rem;
   padding: 10px;
-  color: var(--clr-white);
-  font-family: var(--ff-overpass);
+  color: white;
+  font-family: "Overpass", sans-serif;
   opacity: 0;
   -webkit-transition: .2s ease opacity;
   transition: .2s ease opacity;
@@ -257,20 +384,40 @@ main .container-planos h1 {
   font-size: 2rem;
   font-weight: 900;
   padding: 10px;
-  color: var(--clr-white);
-  font-family: var(--ff-overpass);
+  color: white;
+  font-family: "Overpass", sans-serif;
   text-align: center;
 }
 
 main .container-planos .planos {
   height: 60vh;
-  width: 80%;
+  width: 300px;
   margin: 0 auto;
   border: 1px solid white;
   margin-bottom: 50px;
+  -webkit-box-shadow: 2px 2px 4px white;
+          box-shadow: 2px 2px 4px white;
+  overflow: hidden;
 }
 
-main .container-planos .planos .plano1 {
+main .container-planos .planos .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transition: -webkit-transform 0.5s ease-in-out;
+  transition: -webkit-transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+main .container-planos .planos .container .plano1, main .container-planos .planos .container .plano2, main .container-planos .planos .container .plano3 {
+  height: 60vh;
+  width: 80%;
+}
+
+main .container-planos .planos .container .plano1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -278,14 +425,18 @@ main .container-planos .planos .plano1 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  color: var(--clr-white);
-  font-family: var(--ff-overpass);
+  color: white;
+  font-family: "Overpass", sans-serif;
 }
 
-main .container-planos .planos .plano1 h4 {
+main .container-planos .planos .container .plano1 .titulo-plano {
   font-size: 1.7rem;
   font-weight: 900;
   text-align: center;
   padding: 20px;
+}
+
+main .container-planos .planos .container .plano1 .preco-plano {
+  font-size: 1.5rem;
 }
 /*# sourceMappingURL=style.css.map */

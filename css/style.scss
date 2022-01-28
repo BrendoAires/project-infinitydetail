@@ -1,25 +1,160 @@
 @import url('https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Ubuntu:wght@400;500;700&display=swap');
 
 
-:root{
-    --clr-azul1: hsl(193, 68%, 57%);
-    --clr-azul2: hsl(201, 100%, 34%);
-    --clr-black: hsl(144,18%, 5%);
-    --clr-roxo: hsl(255,29%,28%);
-    --clr-roxo1: rgb(22, 18, 36);
-    --clr-white: hsl(0, 0%, 100%);
 
-    --ff-overpass: 'Overpass', sans-serif;
-    --fw-ov-300:300;
-    --fw-ov-600:600;
     
-    --ff-ubuntu: 'Ubuntu', sans-serif;
-    --fw-ubu-400:400;
-    --fw-ubu-500:500;
-    --fw-ubu-700:700;
+    $azul1: hsl(193, 68%, 57%);
+    $azul2: hsl(201, 100%, 34%);
+    $black: hsl(144,18%, 5%);
+    $roxo: hsl(255,29%,28%);
+
+    
+    $roxo1: rgb(22, 18, 36);
+    $white: hsl(0, 0%, 100%);
+
+    $gray: #9b9b9b;
+
+    $ff-overpass: 'Overpass', sans-serif;
+    $fw-ov-300:300;
+    $fw-ov-600:600;
+    
+    $ff-ubuntu: 'Ubuntu', sans-serif;
+    $fw-ubu-400:400;
+    $fw-ubu-500:500;
+    $fw-ubu-700:700;
+
+
+
+
+
+/*-----Formulario Header-------*/
+
+$primary: #ff0043;
+$secondary: #ea38a3;
+
+
+.form{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    height: inherit;
+}
+.form__group{
+    position: relative;
+    padding: 15px 0 0;
+    margin-top:10px;
+    width:60%;
+
 }
 
 
+.form__field{
+    font-family: $ff-overpass;
+    width:100%;
+    border:0;
+    border-bottom: 2px solid $gray;
+    outline:0;
+    font-size:1.3rem;
+    margin-top: 20px;
+    color: $white;
+    padding: 7px 0;
+    background: transparent;
+    transition: border-color 0.2s;
+
+    &::placeholder{
+        color:transparent;
+    }
+    &:placeholder-shown ~ .form__label{
+        font-size: 1.1rem;
+        cursor: text;
+        
+    }
+
+    &:placeholder-shown ~ .nome__class{
+        top: 50px;
+    }
+
+    &:placeholder-shown ~ .telefone__class{
+        top: 110px;
+    }
+
+
+}
+
+.form__label{
+    position: absolute;
+    
+    display: block;
+    transition:0.2s;
+    font-size:.9rem;
+    color:$gray;
+    font-family: $ff-overpass;
+        
+}
+.nome__class{
+    top:20px;
+}
+.telefone__class{
+    top:80px;
+}
+
+
+.form__field:focus{
+    ~ .form__label{
+        position: absolute;
+        
+        display: block;
+        transition: 0.2s;
+        font-size: 1rem;
+        color: $azul2;
+        font-weight: 700;
+    }
+
+    ~ .nome__class{
+        top:30px;
+    }
+    ~ .telefone__class{
+        top:90px;
+    }
+    padding-bottom: 6px;
+    font-weight: 700;
+    border-width: 3px;
+    border-image: linear-gradient(to right, $azul1, $azul2);
+    border-image-slice: 1;
+}
+
+.form__field{
+    &:required, &:invalid {box-shadow: none;}
+}
+
+.center-button{
+    display: flex;
+    width: 100%;
+    height: fit-content;
+    justify-content: center;
+    align-items: center;
+.button{
+    width:50%;
+    height:30px;
+    outline: 0;
+    border: 2px solid $azul1;
+    border-radius: 10px;
+    background: transparent;
+    color: $gray;
+    font-family: $ff-overpass;
+    font-size: 1rem;
+    margin-top: 10px;
+    transition: .3s;
+    &:hover{
+        border: none;
+        background: $azul1;
+        color:$black;
+    }
+}
+}
+
+/*-----FIM FORMULARIO-----*/
 
 html{
     background: rgb(72,59,83);
@@ -48,21 +183,21 @@ header{
         
 
         a{
-            color: var(--clr-azul2);
-            font-family: var(--ff-ubuntu);
+            color: $azul2;
+            font-family: $ff-ubuntu;
             
         }
         small{
             font-size:.7rem;
             text-align: center;
             display:block;
-            color: var(--clr-azul1);
-            font-family: var(--ff-ubuntu);
+            color: $azul1;
+            font-family: $ff-ubuntu;
         }
         
     }
     }
-    .form-contato{
+    /*.form-contato{
         display: flex;
         width: 100%;
         justify-content: center;
@@ -101,7 +236,7 @@ header{
             }
             
         }
-    }
+    }*/
 
     
     .capa{
@@ -119,10 +254,10 @@ header{
     h1{
         font-size: 2rem;
         text-align: center;
-        color: var(--clr-white);
-        font-family: var(--ff-ubuntu);
+        color: $white;
+        font-family: $ff-ubuntu;
         font-weight: 500;
-        color: var(--clr-white);
+        color: $white;
         
     }
     .menu{
@@ -144,8 +279,8 @@ main{
         .container-servicos{
             h1{
                 font-size: 2rem;
-                color: white;
-                font-family: var(--ff-overpass);
+                color:$white;
+                font-family: $ff-overpass;
                 font-weight: 500;
                 text-align: center;
                 margin-bottom: 30px;
@@ -163,7 +298,7 @@ main{
                         display: flex;
                         justify-content: center;
                         align-items: center;
-                        border: 1px solid white;
+                        border: 1px solid $white;
                         border-left:0;
                         border-right: 0;
                         height: 200px;
@@ -182,11 +317,11 @@ main{
                         
                     }
                     h3{
-                        background: var(--clr-roxo);
+                        background: $roxo;
                         font-size:1.2rem;
                         padding:10px;
-                        color: var(--clr-white);
-                        font-family: var(--ff-overpass);
+                        color: $white;
+                        font-family: $ff-overpass;
                         opacity:0;
                         transition: .2s ease opacity;
                     }
@@ -253,32 +388,49 @@ main{
             font-size:2rem;
             font-weight: 900;
             padding:10px;
-            color: var(--clr-white);
-            font-family: var(--ff-overpass);
+            color: $white;
+            font-family: $ff-overpass;
             text-align: center;
                  
         }
         .planos{
             height: 60vh;
-            width: 80%;
+            width: 300px;
             margin: 0 auto;
-            border: 1px solid white;
+            border: 1px solid $white;
             margin-bottom: 50px;
+            box-shadow: 2px 2px 4px $white;
+                overflow: hidden;
+
+                .container{
+                    display: flex;
+                transition: transform 0.5s ease-in-out;
+                transform: translateX(0);
+                    
+            .plano1, .plano2, .plano3{
+                height: 60vh;
+            width: 80%;
+                
+            }
 
             .plano1{
                 display: flex;
                 flex-direction: column;
-                color: var(--clr-white);
-                font-family: var(--ff-overpass);
-                h4{
+                color: $white;
+                font-family: $ff-overpass;
+                .titulo-plano{
                     font-size: 1.7rem;
                     font-weight: 900;
                     text-align: center;
                     padding: 20px;
                 }
+                .preco-plano{
+                    font-size: 1.5rem;
+                }
 
                 
             }
+        }
             
         }
     }

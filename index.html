@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="pt-br">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -57,18 +57,21 @@
                 </div>
             </div>
         </div>
-
-            <div class="form-contato">
+        <div class="form">
+            <div class="form__group field">
                 <form class="formulario" method="POST">
-                        <label for="nome">Nome</label>
-                        <input type ="text" id="nome" class="nome" placeholder="Nome">
-                        <label for="tel">Telefone</label>
-                        <input type="tel" id="tel" class="tel" placeholder="(21)999999999">
-                    
-                        <input type="submit" class="button">
-                    
+                        
+                        <input type ="input" id="name" class="form__field nome__class" placeholder="Nome" name="name" required/>
+                        <label for="name" class="form__label nome__class">Nome</label>
+                        
+                        <input type="tel" id="tel" class="form__field tel" placeholder="(21)999999999" name="tel" required>
+                        <label class="form__label telefone__class" for="tel">Telefone</label>
+                        <div class="center-button">
+                            <input type="submit" class="button">
+                        </div>
                 </form>
             </div>
+        </div>
         </header>
 
         <main>
@@ -108,10 +111,11 @@
                 <div class="container-planos">
                     <h1>Seja premium, conheça nossos planos</h1>
 
-                    <div class="planos">
+                    <div class="planos" id="plano">
+                        <div class="container" id="container">
                         <div class="plano1">
-                            <h4>Infinity Gold</h4>
-                            <h5>R$149,90</h5>
+                            <h4 class="titulo-plano">Infinity Gold</h4>
+                            <h5 class="preco-plano">R$149,90</h5>
 
                             <p>Desconto de até
                                 10% em todos os serviços
@@ -126,11 +130,12 @@
                             <p>Preço super especial</p>
                             <p>Lavagem Interna e externa</p>
                         </div>
-                        <div class="plano1">
+                        <div class="plano2">
                             
                         </div>
-                        <div class="plano1">
+                        <div class="plano3">
                             
+                        </div>
                         </div>
                     </div>
                 </div>

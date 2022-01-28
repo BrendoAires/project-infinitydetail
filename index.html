@@ -11,6 +11,7 @@
         <link rel="stylesheet" href="css/reset.css">
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/estilo-menu.css">
+
         <title>INFINITY - Estética Automotiva</title>
     </head>
 
@@ -27,7 +28,7 @@
             </div>
             
 
-            <div class="menu">
+            <div class="menu" id="menu">
                 <nav class="navigation-menu">
                     <ul class="list-nav">
                     <li>Inicio</li>
@@ -39,23 +40,25 @@
             </div>
 
             
-            <div class="menu-burger burger burger-squeeze">
-                <div class="burger-lines"></div>
-              </div>
-            
-            <div class="menu-dropdown" id="menu-dropdown">
-                <div class="menu">
-                    <nav class="navigation-menu">
-                        <ul class="list-nav">
-                            <li>Inicio</li>
-                            <li>Serviços</li>
-                            <li>Contato</li>
-                            <li>Onde Estamos</li>
-                                
-                        </ul>
-                    </nav>
+            <div class="menu-burger burger burger-squeeze" id="burger">
+                <div class="burger-lines">
+                    <div class="menu-dropdown" id="menu-dropdown">
+                        
+                            <nav class="navigation-menu">
+                                <ul class="list-nav" id="list-nav">
+                                    <li>Inicio</li>
+                                    <li>Serviços</li>
+                                    <li>Contato</li>
+                                    <li>Onde Estamos</li>
+                                        
+                                </ul>
+                            </nav>
+                        
+                    </div>
                 </div>
             </div>
+            
+            
         </div>
         <div class="form">
             <div class="form__group field">
@@ -75,6 +78,23 @@
         </header>
 
         <main>
+
+
+
+
+
+            <div class="container">
+                <input type="checkbox" id="checkbox-menu">
+                <label for="chekbox-menu">
+                    <span></span>
+                <span></span>
+                <span></span>
+                </label>
+                
+            </div>
+
+
+
             <div class="wrap">
                 <div class="container-servicos">
                     <h1>Venha conhecer nossos serviços</h1>

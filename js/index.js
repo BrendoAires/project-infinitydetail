@@ -4,11 +4,13 @@ linkMenu.addEventListener('click', ()=>{
 	const element = document.getElementById("dropdown-menu");
     if (element.style.display === 'block') {
         element.style.display = 'none';
+        document.getElementById("dropdown-menu").style.width = "0";
+        
         
 
     } else {
         element.style.display = 'block'; 
-        
+        document.getElementById("dropdown-menu").style.width = "200px";
     }
     
 })

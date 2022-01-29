@@ -341,19 +341,18 @@ header{
         display:none;
         margin-top: 70px;
         padding: 20px;
-        width: 50%;
-        max-width: 300px;
+        width: 0;
+        
         position: absolute;
         z-index: 10;
         top: 0;
         right: 0;
-        height: calc(50% - 70px);
+        height: 100%;
         background: #ececec;
-        pointer-events: auto;
-        transform: translateX(20%);
-        transition: all .5s;
-        will-change: transform;
-        contain: paint;
+        
+        
+        transition: all 5s;
+        overflow-x:hidden;
 
 
     

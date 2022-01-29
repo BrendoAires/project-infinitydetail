@@ -307,7 +307,7 @@ header .container label {
   cursor: pointer;
   position: absolute;
   display: block;
-  right: 10px;
+  right: 0;
   height: 22px;
   width: 30px;
 }

@@ -1,19 +1,17 @@
-const linkMenu = document.getElementById("checkbox-menu");
-linkMenu.addEventListener('click', ()=>{
-    
-	const element = document.getElementById("dropdown-menu");
-    if (element.style.display === 'block') {
-        element.style.display = 'none';
-        document.getElementById("dropdown-menu").style.width = "0";
-        
-        
+const element = document.getElementById("mySidenav");
 
-    } else {
-        element.style.display = 'block'; 
-        document.getElementById("dropdown-menu").style.width = "200px";
-    }
+    const linkMenu = document.getElementById("checkbox-menu");
+    linkMenu.addEventListener('click', ()=>{
     
-})
+    if (element.style.width === "200px"){
+        document.getElementById("mySidenav").style.width = "0"
+    }else{
+    document.getElementById("mySidenav").style.width = "200px";
+  }
+    })
+
+
+
 
 
 const divs = document.getElementById("container");

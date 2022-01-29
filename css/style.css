@@ -225,6 +225,7 @@ header .nav-navbrand {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  height: 70px;
 }
 
 header .nav-navbrand .nav-brand {
@@ -278,18 +279,20 @@ header h1 {
 }
 
 header .container {
-  height: 100%;
+  height: inherit;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: end;
   padding-right: 10px;
+  top: 20px;
+  position: absolute;
 }
 
 header .container #checkbox-menu {
@@ -361,46 +364,39 @@ header input[type="checkbox"]:checked ~ label {
 }
 
 header input[type="checkbox"]:checked ~ section {
-  -webkit-transform: translate3d(110px, 0, 0);
-          transform: translate3d(110px, 0, 0);
+  -webkit-transform: translate3d(250px, 0, 0);
+          transform: translate3d(250px, 0, 0);
 }
 
-header #dropdown-menu {
-  display: none;
-  margin-top: 70px;
-  padding: 20px;
-  width: 0;
-  position: absolute;
-  z-index: 10;
-  top: 0;
-  right: 0;
+header .sidenav {
   height: 100%;
-  background: #ececec;
-  -webkit-transition: all 5s;
-  transition: all 5s;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
   overflow-x: hidden;
-  /*.dropdown-menu{
-        
-        
-        display:none;
-        position:fixed;
-        background: $gray;
-        margin: 0 -200px 0 0;
-        width:150px;
-        right:0;
-        top:60px;
-        height: 100px;
-        transition: .2s;
-        
-*/
+  -webkit-transition: .5s;
+  transition: .5s;
+  padding-top: 60px;
 }
 
-header #dropdown-menu .list-nav li {
-  color: #0a0f0c;
-  padding: 5px;
-  font-family: "Ubuntu", sans-serif;
+header .sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
   font-size: 1rem;
-  font-weight: 700;
+  color: #818181;
+  display: block;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  font-weight: 300;
+  font-family: "Ubuntu", sans-serif;
+  text-transform: uppercase;
+}
+
+header .sidenav a:hover {
+  color: #47bcdc;
 }
 
 main .wrap {

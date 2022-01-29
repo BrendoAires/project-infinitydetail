@@ -170,7 +170,7 @@ header{
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        
+        height:70px;
     
 
     .nav-brand{
@@ -264,12 +264,15 @@ header{
     }
     
     .container{
-        height: 100%;
+        height: inherit;
         width:100%;
         display: flex;
-        align-items: center;
+        align-items: baseline;
         justify-content: end;
         padding-right:10px;
+        top:20px;
+        position: absolute;
+    
     
     #checkbox-menu{
         position: absolute;
@@ -282,6 +285,7 @@ header{
         display: block;
         height: 22px;
         width:30px;
+        
        
     }
     label span{
@@ -334,63 +338,46 @@ header{
     }
     input[type="checkbox"]:checked ~ section{
         
-        transform:translate3d(110px, 0, 0);
+        transform:translate3d(250px, 0, 0);
     }
-    
-    #dropdown-menu{
-        display:none;
-        margin-top: 70px;
-        padding: 20px;
-        width: 0;
-        
-        position: absolute;
-        z-index: 10;
-        top: 0;
-        right: 0;
+   
+
+    .sidenav {
         height: 100%;
-        background: #ececec;
-        
-        
-        transition: all 5s;
-        overflow-x:hidden;
-
-
-    
-    /*.dropdown-menu{
-        
-        
-        display:none;
-        position:fixed;
-        background: $gray;
-        margin: 0 -200px 0 0;
-        width:150px;
-        right:0;
-        top:60px;
-        height: 100px;
-        transition: .2s;
-        
-*/
-        
-        
-        .list-nav{
-            
-            li{
-                color: $black;
-                padding:5px;
-                font-family: $ff-ubuntu;
-                font-size: 1rem;
-                font-weight: 700;
-
-            }
-            
-        }
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: #111;
+        overflow-x: hidden;
+        transition: .5s;
+        padding-top: 60px;
+      }
+      
+      .sidenav a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 1rem;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+        font-weight: 300;
+        font-family: $ff-ubuntu;
+        text-transform: uppercase;
+      }
+      
+      .sidenav a:hover {
+        color: $azul1;
+      }
+      
     }
 
         
 
         
     
-}
+
 
 main{
 

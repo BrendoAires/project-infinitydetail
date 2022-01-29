@@ -305,8 +305,9 @@ header .container #checkbox-menu {
 
 header .container label {
   cursor: pointer;
-  position: relative;
+  position: absolute;
   display: block;
+  right: 10px;
   height: 22px;
   width: 30px;
 }

@@ -600,9 +600,6 @@ main .container-planos .planos .container .plano1 .info-plano, main .container-p
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 main .container-planos .planos .container .plano1 .info-plano ul, main .container-planos .planos .container .plano2 .info-plano ul, main .container-planos .planos .container .plano3 .info-plano ul {
@@ -614,7 +611,21 @@ main .container-planos .planos .container .plano1 .info-plano ul li, main .conta
   padding-bottom: 20px;
 }
 
-main .container-planos .planos .container .plano1 .info-plano .button, main .container-planos .planos .container .plano2 .info-plano .button, main .container-planos .planos .container .plano3 .info-plano .button {
+main .container-planos .planos .container .plano1 .info-plano .saibamais, main .container-planos .planos .container .plano2 .info-plano .saibamais, main .container-planos .planos .container .plano3 .info-plano .saibamais {
+  width: 100%;
+  height: 50px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main .container-planos .planos .container .plano1 .info-plano .saibamais .button, main .container-planos .planos .container .plano2 .info-plano .saibamais .button, main .container-planos .planos .container .plano3 .info-plano .saibamais .button {
   width: 100px;
   height: 40px;
   outline: 0;
@@ -631,7 +642,7 @@ main .container-planos .planos .container .plano1 .info-plano .button, main .con
   font-size: 1rem;
 }
 
-main .container-planos .planos .container .plano1 .info-plano .button:hover, main .container-planos .planos .container .plano2 .info-plano .button:hover, main .container-planos .planos .container .plano3 .info-plano .button:hover {
+main .container-planos .planos .container .plano1 .info-plano .saibamais .button:hover, main .container-planos .planos .container .plano2 .info-plano .saibamais .button:hover, main .container-planos .planos .container .plano3 .info-plano .saibamais .button:hover {
   background: #47bcdc;
 }
 /*# sourceMappingURL=style.css.map */

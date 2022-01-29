@@ -555,7 +555,6 @@ main{
                     color: $gray;
                     display:flex;
                     flex-direction: column;
-                    align-items: center;
 
                     ul{
                         list-style:disc;
@@ -564,7 +563,12 @@ main{
                             padding-bottom:20px;
                         }
                     }
-
+                    .saibamais{
+                        width:100%;
+                        height:50px;
+                        align-items: center;
+                        display: flex;
+                        justify-content: center;
                    .button{
                         width:100px;
                         height:40px;
@@ -583,6 +587,7 @@ main{
                             background: $azul1;
                         }
                     }
+                }
                 }
 
 

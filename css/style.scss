@@ -37,8 +37,9 @@ $secondary: #ea38a3;
     display:flex;
     flex-direction: column;
     align-items: center;
-    justify-content: end;
+    justify-content: flex-end;
     height: inherit;
+    margin-bottom: 100px;
 }
 .form__group{
     position: relative;
@@ -161,7 +162,7 @@ html{
     background: linear-gradient(6deg, rgba(72,59,83,1) 43%, rgba(0,0,0,1) 73%);
 }
 header{
-    height: 60vh;
+    height: 90vh;
     width:100%;
     display: flex;
     flex-direction: column;
@@ -356,7 +357,7 @@ header{
       }
       
       .sidenav a {
-        padding: 8px 8px 8px 32px;
+        padding: 10px 10px 10px 32px;
         text-decoration: none;
         font-size: 1rem;
         color: #818181;
@@ -365,6 +366,7 @@ header{
         font-weight: 300;
         font-family: $ff-ubuntu;
         text-transform: uppercase;
+        cursor: pointer;
       }
       
       .sidenav a:hover {

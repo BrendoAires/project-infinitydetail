@@ -13,8 +13,9 @@
           align-items: center;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
-          justify-content: end;
+          justify-content: flex-end;
   height: inherit;
+  margin-bottom: 100px;
 }
 
 .form__group {
@@ -163,7 +164,7 @@ html {
 }
 
 header {
-  height: 60vh;
+  height: 90vh;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -383,7 +384,7 @@ header .sidenav {
 }
 
 header .sidenav a {
-  padding: 8px 8px 8px 32px;
+  padding: 10px 10px 10px 32px;
   text-decoration: none;
   font-size: 1rem;
   color: #818181;
@@ -393,6 +394,7 @@ header .sidenav a {
   font-weight: 300;
   font-family: "Ubuntu", sans-serif;
   text-transform: uppercase;
+  cursor: pointer;
 }
 
 header .sidenav a:hover {

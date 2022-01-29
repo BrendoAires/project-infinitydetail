@@ -420,7 +420,7 @@ main{
                         height: 200px;
                         opacity:.8;
                         filter: blur(3px);
-                        transition: .2s ease all;
+                        transition: .3s ease all;
 
                         
 
@@ -507,6 +507,10 @@ main{
             color: $white;
             font-family: $ff-overpass;
             text-align: center;
+            
+            .italic{
+               font-style: italic; 
+            }
                  
         }
         .planos{

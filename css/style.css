@@ -446,8 +446,8 @@ main .wrap .container-servicos .servico .servico1 .img, main .wrap .container-se
   opacity: .8;
   -webkit-filter: blur(3px);
           filter: blur(3px);
-  -webkit-transition: .2s ease all;
-  transition: .2s ease all;
+  -webkit-transition: .3s ease all;
+  transition: .3s ease all;
 }
 
 main .wrap .container-servicos .servico .servico1 .img:hover, main .wrap .container-servicos .servico .servico2 .img:hover, main .wrap .container-servicos .servico .servico3 .img:hover, main .wrap .container-servicos .servico .servico4 .img:hover, main .wrap .container-servicos .servico .servico5 .img:hover, main .wrap .container-servicos .servico .servico6 .img:hover {
@@ -510,6 +510,10 @@ main .container-planos h1 {
   color: white;
   font-family: "Overpass", sans-serif;
   text-align: center;
+}
+
+main .container-planos h1 .italic {
+  font-style: italic;
 }
 
 main .container-planos .planos {

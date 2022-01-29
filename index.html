@@ -23,14 +23,14 @@
             <div class="nav-brand">
                 <a href="#">INFINITY</a>
                 <small>Estética </small>
-                <small>Automtiva</small>
+                <small>Automotiva</small>
             </div>
             
 
             <div class="menu" id="menu">
                 <nav class="navigation-menu">
                     <ul class="list-nav">
-                    <li>Inicio</li>
+                    <li>Início</li>
                     <li>Serviços</li>
                     <li>Contato</li>
                     <li>Onde Estamos</li>
@@ -39,7 +39,7 @@
             </div>
 
             <div class="container">
-                <input type="checkbox" onclick="openNav()" id="checkbox-menu">
+                <input type="checkbox"  id="checkbox-menu">
                 <label for="checkbox-menu">
                     <span></span>
                     <span></span>
@@ -51,8 +51,8 @@
                 <div class="sidenav" id="mySidenav">
                     
                         
-                        <a href="#">Inicio</a>
-                        <a href="#">Serviços</a>
+                        <a href="#">Início</a>
+                        <a href="#servicos">Serviços</a>
                         <a href="#">Contato</a>
                         <a href="#">Onde Estamos</a>
                             
@@ -66,11 +66,11 @@
             
         </div>
         <div class="form">
-            <h1>Inscreva-se para receber nossas promoçoes</h1>
+            <h1>Inscreva-se para receber nossas promoçoes:</h1>
             <div class="form__group field">
                 <form class="formulario" method="POST">
                         
-                        <input type ="input" id="name" class="form__field nome__class" placeholder="Nome" name="name" required/>
+                        <input type ="input" id="name" class="form__field nome__class" autocomplete="disabled" placeholder="Nome" name="name" required/>
                         <label for="name" class="form__label nome__class">Nome</label>
                         
                         <input type="tel" id="tel" class="form__field tel" placeholder="(21)999999999" name="tel" required>
@@ -94,31 +94,31 @@
 
 
             <div class="wrap">
-                <div class="container-servicos">
-                    <h1>Venha conhecer nossos serviços</h1>
+                <div class="container-servicos" id="servicos">
+                    <h1>Venha conhecer nossos serviços:</h1>
 
                     <div class="servico">
-                        <div class="servico1">
+                        <div id="servico1">
                             
                             <div class="img"><h3>Higienização Completa</h3></div>
                         </div>
-                        <div class="servico2">
+                        <div id="servico2">
                             
                             <div class="img"><h3>Descontaminação de chuva ácida</h3></div>
                         </div>
-                        <div class="servico3">
+                        <div id="servico3">
                             
                             <div class="img"><h3>Lavagem de motor</h3></div>
                         </div>
-                        <div class="servico4">
+                        <div id="servico4">
                             
                             <div class="img"><h3>Vitrificação</h3></div>
                         </div>
-                        <div class="servico5">
+                        <div id="servico5">
                             
                             <div class="img"><h3>Cristalização</h3></div>
                         </div>
-                        <div class="servico6">
+                        <div id="servico6">
                             
                             <div class="img"><h3>Higienização de estofados em geral</h3></div>
                         </div>
@@ -127,7 +127,7 @@
 
                 </div>
                 <div class="container-planos">
-                    <h1>Seja premium, conheça nossos planos</h1>
+                    <h1>Seja <span class="italic">premium</span>, conheça nossos planos</h1>
 
                     <div class="planos" id="plano">
                         <div class="container" id="container">

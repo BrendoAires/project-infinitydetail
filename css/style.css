@@ -366,6 +366,7 @@ header input[type="checkbox"]:checked ~ section {
 }
 
 header #dropdown-menu {
+  display: none;
   margin-top: 70px;
   padding: 20px;
   width: 50%;
@@ -377,8 +378,8 @@ header #dropdown-menu {
   height: calc(50% - 70px);
   background: #ececec;
   pointer-events: auto;
-  -webkit-transform: translateX(0%);
-          transform: translateX(0%);
+  -webkit-transform: translateX(20%);
+          transform: translateX(20%);
   -webkit-transition: all .5s;
   transition: all .5s;
   will-change: transform;

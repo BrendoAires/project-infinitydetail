@@ -571,6 +571,8 @@ main .container-planos .planos .container .plano1, main .container-planos .plano
   margin-bottom: 30px;
   padding: 10px;
   width: 100%;
+  -webkit-box-shadow: 5px 5px 10px #9b9b9b;
+          box-shadow: 5px 5px 10px #9b9b9b;
 }
 
 main .container-planos .planos .container .plano1 .titulo-plano, main .container-planos .planos .container .plano2 .titulo-plano, main .container-planos .planos .container .plano3 .titulo-plano {

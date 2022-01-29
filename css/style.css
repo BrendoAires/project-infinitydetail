@@ -589,6 +589,16 @@ main .container-planos .planos .container .plano1 .preco-plano, main .container-
 main .container-planos .planos .container .plano1 .info-plano, main .container-planos .planos .container .plano2 .info-plano, main .container-planos .planos .container .plano3 .info-plano {
   margin-top: 50px;
   color: #9b9b9b;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 main .container-planos .planos .container .plano1 .info-plano ul, main .container-planos .planos .container .plano2 .info-plano ul, main .container-planos .planos .container .plano3 .info-plano ul {
@@ -598,5 +608,26 @@ main .container-planos .planos .container .plano1 .info-plano ul, main .containe
 main .container-planos .planos .container .plano1 .info-plano ul li, main .container-planos .planos .container .plano2 .info-plano ul li, main .container-planos .planos .container .plano3 .info-plano ul li {
   margin-left: 20px;
   padding-bottom: 20px;
+}
+
+main .container-planos .planos .container .plano1 .info-plano .button, main .container-planos .planos .container .plano2 .info-plano .button, main .container-planos .planos .container .plano3 .info-plano .button {
+  width: 100px;
+  height: 40px;
+  outline: 0;
+  border: 1px solid #47bcdc;
+  background: transparent;
+  color: white;
+  text-align: center;
+  border-radius: 10px;
+  -webkit-transition: .3s;
+  transition: .3s;
+  font-family: "Overpass", sans-serif;
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 1rem;
+}
+
+main .container-planos .planos .container .plano1 .info-plano .button:hover, main .container-planos .planos .container .plano2 .info-plano .button:hover, main .container-planos .planos .container .plano3 .info-plano .button:hover {
+  background: #47bcdc;
 }
 /*# sourceMappingURL=style.css.map */

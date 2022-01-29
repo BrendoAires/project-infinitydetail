@@ -1,13 +1,13 @@
-const linkMenu = document.querySelector("#burger");
+const linkMenu = document.getElementById("checkbox-menu");
 linkMenu.addEventListener('click', ()=>{
     
-	const element = document.querySelector("#list-nav");
-    if (element.style.display === 'none') {
-        element.style.display = 'block';
+	const element = document.getElementById("dropdown-menu");
+    if (element.style.display === 'block') {
+        element.style.display = 'none';
         
 
     } else {
-        element.style.display = 'none'; 
+        element.style.display = 'block'; 
         
     }
     

@@ -169,6 +169,8 @@ header{
     .nav-navbrand{
         display: flex;
         flex-direction: row;
+        justify-content: space-between;
+        
     
 
     .nav-brand{
@@ -261,38 +263,18 @@ header{
         
     }
     
-    
-    #menu{
-        display: none;
-    }
-    .menu-burger{
-        margin: 20px 0 0 0px;
-    }
-    .menu-dropdown{
-        display:none;
-        .list-nav{
-        color: white;
-        }
-    }
-
-        
-
-        
-    
-}
-
-main{
-
-
     .container{
         height: 100%;
+        width:100%;
         display: flex;
         align-items: center;
-        justify-content: center;
+        justify-content: end;
+        padding-right:10px;
     
     #checkbox-menu{
         position: absolute;
         opacity: 0;
+        
     }
     label{
         cursor: pointer;
@@ -300,6 +282,7 @@ main{
         display: block;
         height: 22px;
         width:30px;
+       
     }
     label span{
         position: absolute;
@@ -307,8 +290,9 @@ main{
         height: 5px;
         width:100%;
         border-radius: 30px;
-        background: #f16234;
+        background: $white;
         transition: 0.25s ease-in-out;
+        
     }
     label span:nth-child(1){
         top:0;
@@ -331,7 +315,87 @@ main{
         transform: rotate(45deg);
         top:8px;
     }
+
+    
 }
+    
+    #menu{
+        display: none;
+    }
+
+    input[type="checkbox"]{
+        display:none;
+    }
+    input[type="checkbox"]:checked ~ nav{
+        margin:0;
+    }
+    input[type="checkbox"]:checked ~ label{
+        right:0;
+    }
+    input[type="checkbox"]:checked ~ section{
+        
+        transform:translate3d(110px, 0, 0);
+    }
+    
+    #dropdown-menu{
+        margin-top: 70px;
+        padding: 20px;
+        width: 50%;
+        max-width: 300px;
+        position: absolute;
+        z-index: 10;
+        top: 0;
+        right: 0;
+        height: calc(50% - 70px);
+        background: #ececec;
+        pointer-events: auto;
+        transform: translateX(0%);
+        transition: all .5s;
+        will-change: transform;
+        contain: paint;
+
+
+    
+    /*.dropdown-menu{
+        
+        
+        display:none;
+        position:fixed;
+        background: $gray;
+        margin: 0 -200px 0 0;
+        width:150px;
+        right:0;
+        top:60px;
+        height: 100px;
+        transition: .2s;
+        
+*/
+        
+        
+        .list-nav{
+            
+            li{
+                color: $black;
+                padding:5px;
+                font-family: $ff-ubuntu;
+                font-size: 1rem;
+                font-weight: 700;
+
+            }
+            
+        }
+    }
+
+        
+
+        
+    
+}
+
+main{
+
+
+    
 
     .wrap{
         margin-top: 100px;

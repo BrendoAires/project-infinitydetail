@@ -222,6 +222,9 @@ header .nav-navbrand {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 header .nav-navbrand .nav-brand {
@@ -274,41 +277,27 @@ header h1 {
   color: white;
 }
 
-header #menu {
-  display: none;
-}
-
-header .menu-burger {
-  margin: 20px 0 0 0px;
-}
-
-header .menu-dropdown {
-  display: none;
-}
-
-header .menu-dropdown .list-nav {
-  color: white;
-}
-
-main .container {
+header .container {
   height: 100%;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  padding-right: 10px;
 }
 
-main .container #checkbox-menu {
+header .container #checkbox-menu {
   position: absolute;
   opacity: 0;
 }
 
-main .container label {
+header .container label {
   cursor: pointer;
   position: relative;
   display: block;
@@ -316,43 +305,106 @@ main .container label {
   width: 30px;
 }
 
-main .container label span {
+header .container label span {
   position: absolute;
   display: block;
   height: 5px;
   width: 100%;
   border-radius: 30px;
-  background: #f16234;
+  background: white;
   -webkit-transition: 0.25s ease-in-out;
   transition: 0.25s ease-in-out;
 }
 
-main .container label span:nth-child(1) {
+header .container label span:nth-child(1) {
   top: 0;
 }
 
-main .container label span:nth-child(2) {
+header .container label span:nth-child(2) {
   top: 8px;
 }
 
-main .container label span:nth-child(3) {
+header .container label span:nth-child(3) {
   top: 16px;
 }
 
-main .container #checkbox-menu:checked + label span:nth-child(1) {
+header .container #checkbox-menu:checked + label span:nth-child(1) {
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
   top: 8px;
 }
 
-main .container #checkbox-menu:checked + label span:nth-child(2) {
+header .container #checkbox-menu:checked + label span:nth-child(2) {
   opacity: 0;
 }
 
-main .container #checkbox-menu:checked + label span:nth-child(3) {
+header .container #checkbox-menu:checked + label span:nth-child(3) {
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
   top: 8px;
+}
+
+header #menu {
+  display: none;
+}
+
+header input[type="checkbox"] {
+  display: none;
+}
+
+header input[type="checkbox"]:checked ~ nav {
+  margin: 0;
+}
+
+header input[type="checkbox"]:checked ~ label {
+  right: 0;
+}
+
+header input[type="checkbox"]:checked ~ section {
+  -webkit-transform: translate3d(110px, 0, 0);
+          transform: translate3d(110px, 0, 0);
+}
+
+header #dropdown-menu {
+  margin-top: 70px;
+  padding: 20px;
+  width: 50%;
+  max-width: 300px;
+  position: absolute;
+  z-index: 10;
+  top: 0;
+  right: 0;
+  height: calc(50% - 70px);
+  background: #ececec;
+  pointer-events: auto;
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+  -webkit-transition: all .5s;
+  transition: all .5s;
+  will-change: transform;
+  contain: paint;
+  /*.dropdown-menu{
+        
+        
+        display:none;
+        position:fixed;
+        background: $gray;
+        margin: 0 -200px 0 0;
+        width:150px;
+        right:0;
+        top:60px;
+        height: 100px;
+        transition: .2s;
+        
+*/
+}
+
+header #dropdown-menu .list-nav li {
+  color: #0a0f0c;
+  padding: 5px;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
 }
 
 main .wrap {

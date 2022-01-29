@@ -522,7 +522,7 @@ main{
             
 
             .plano1, .plano2, .plano3{
-                height: 60vh;
+                height: fit-content;
                 background: $black;
                 width: 80%;
                 display: flex;
@@ -530,7 +530,7 @@ main{
                 color: $white;
                 font-family: $ff-overpass;
                 border-radius: 20px;
-                margin-bottom: 20px;
+                margin-bottom: 30px;
                 padding:10px;
                 width:100%;
                 .titulo-plano{

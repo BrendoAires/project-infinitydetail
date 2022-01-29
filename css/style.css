@@ -553,7 +553,9 @@ main .container-planos .planos .container {
 }
 
 main .container-planos .planos .container .plano1, main .container-planos .planos .container .plano2, main .container-planos .planos .container .plano3 {
-  height: 60vh;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
   background: #0a0f0c;
   width: 80%;
   display: -webkit-box;
@@ -566,7 +568,7 @@ main .container-planos .planos .container .plano1, main .container-planos .plano
   color: white;
   font-family: "Overpass", sans-serif;
   border-radius: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   padding: 10px;
   width: 100%;
 }

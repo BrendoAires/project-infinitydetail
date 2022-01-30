@@ -148,7 +148,7 @@
   border: 2px solid #47bcdc;
   border-radius: 10px;
   background: transparent;
-  color: #9b9b9b;
+  color: white;
   font-family: "Overpass", sans-serif;
   font-size: 1rem;
   margin-top: 10px;
@@ -438,33 +438,14 @@ main .wrap .container-servicos .servico {
   display: grid;
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
-  /*
-                #servico3{
-                    background-image:url("/img/img-higieniza.jpg");
-                    background-repeat: no-repeat;
-                    background-size: cover;
-                    }
-                #servico4{
-                    background-image:url("/img/img-higieniza.jpg");
-                    background-repeat: no-repeat;
-                    background-size: cover;
-                    }
-                #servico5{
-                    background-image:url("/img/img-higieniza.jpg");
-                    background-repeat: no-repeat;
-                    background-size: cover;
-                    }
-                #servico6{
-                    background-image:url("/img/img-higieniza.jpg");
-                    background-repeat: no-repeat;
-                    background-size: cover;
-                    }*/
 }
 
 main .wrap .container-servicos .servico #servico1, main .wrap .container-servicos .servico #servico2, main .wrap .container-servicos .servico #servico3, main .wrap .container-servicos .servico #servico4, main .wrap .container-servicos .servico #servico5, main .wrap .container-servicos .servico #servico6 {
   height: 200px;
   -webkit-filter: blur(3px);
           filter: blur(3px);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 main .wrap .container-servicos .servico #servico1:hover, main .wrap .container-servicos .servico #servico2:hover, main .wrap .container-servicos .servico #servico3:hover, main .wrap .container-servicos .servico #servico4:hover, main .wrap .container-servicos .servico #servico5:hover, main .wrap .container-servicos .servico #servico6:hover {
@@ -515,14 +496,26 @@ main .wrap .container-servicos .servico #servico1 h3, main .wrap .container-serv
 
 main .wrap .container-servicos .servico #servico1 {
   background-image: url("/img/img-higieniza.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 main .wrap .container-servicos .servico #servico2 {
   background-image: url("/img/img-higieniza.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
+}
+
+main .wrap .container-servicos .servico #servico3 {
+  background-image: url("/img/img-higieniza.jpg");
+}
+
+main .wrap .container-servicos .servico #servico4 {
+  background-image: url("/img/img-higieniza.jpg");
+}
+
+main .wrap .container-servicos .servico #servico5 {
+  background-image: url("/img/img-higieniza.jpg");
+}
+
+main .wrap .container-servicos .servico #servico6 {
+  background-image: url("/img/img-higieniza.jpg");
 }
 
 main .container-planos h1 {
@@ -571,7 +564,6 @@ main .container-planos .planos .container .plano {
   height: fit-content;
   -webkit-perspective: 1000px;
           perspective: 1000px;
-  height: fit-content;
   background: #0a0f0c;
   width: 80%;
   display: -webkit-box;
@@ -748,5 +740,184 @@ footer .atribuicao a {
 
 .button:hover {
   background: #47bcdc;
+}
+
+@media (min-width: 768px) {
+  body header {
+    height: 60vh;
+  }
+  body header .nav-navbrand {
+    height: 100px;
+    margin-top: 20px;
+  }
+  body header .nav-navbrand .nav-brand {
+    margin: 20px 0 0 20px;
+    font-size: 2rem;
+    letter-spacing: 7px;
+  }
+  body header .nav-navbrand .nav-brand small {
+    font-size: .9rem;
+  }
+  body header .capa {
+    background-position: -200px -10px;
+  }
+  body main .wrap {
+    margin-top: 200px;
+  }
+  body main .wrap .container-servicos h1 {
+    font-size: 3rem;
+    margin-bottom: 60px;
+  }
+  body main .wrap .container-servicos .servico {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 100px;
+  }
+  body main .wrap .container-servicos .servico #servico1, body main .wrap .container-servicos .servico #servico2, body main .wrap .container-servicos .servico #servico3, body main .wrap .container-servicos .servico #servico4, body main .wrap .container-servicos .servico #servico5, body main .wrap .container-servicos .servico #servico6 {
+    height: 200px;
+    -webkit-filter: blur(3px);
+            filter: blur(3px);
+    -webkit-transition: .2s;
+    transition: .2s;
+  }
+  body main .wrap .container-servicos .servico #servico1:hover, body main .wrap .container-servicos .servico #servico2:hover, body main .wrap .container-servicos .servico #servico3:hover, body main .wrap .container-servicos .servico #servico4:hover, body main .wrap .container-servicos .servico #servico5:hover, body main .wrap .container-servicos .servico #servico6:hover {
+    -webkit-filter: blur(0);
+            filter: blur(0);
+    border: 1px solid white;
+  }
+  body main .wrap .container-servicos .servico #servico1:hover h3, body main .wrap .container-servicos .servico #servico2:hover h3, body main .wrap .container-servicos .servico #servico3:hover h3, body main .wrap .container-servicos .servico #servico4:hover h3, body main .wrap .container-servicos .servico #servico5:hover h3, body main .wrap .container-servicos .servico #servico6:hover h3 {
+    opacity: 1;
+  }
+  body main .wrap .container-servicos .servico #servico1 .img-serv, body main .wrap .container-servicos .servico #servico2 .img-serv, body main .wrap .container-servicos .servico #servico3 .img-serv, body main .wrap .container-servicos .servico #servico4 .img-serv, body main .wrap .container-servicos .servico #servico5 .img-serv, body main .wrap .container-servicos .servico #servico6 .img-serv {
+    border: 0;
+  }
+  body main .container-planos h1 {
+    font-size: 3rem;
+  }
+  body main .container-planos .planos {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  body main .container-planos .planos .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    padding: 30px;
+  }
+  body main .container-planos .planos .container .plano {
+    margin: 5px;
+    width: 300px;
+    max-height: 550px;
+    height: 550px;
+    width: 80%;
+    padding: 10px;
+    width: 100%;
+    -webkit-box-shadow: 5px 5px 10px #9b9b9b;
+            box-shadow: 5px 5px 10px #9b9b9b;
+  }
+}
+
+@media (min-width: 1024px) {
+  body header .nav-navbrand {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  body header .nav-navbrand .container {
+    width: 0;
+  }
+  body header .nav-navbrand #menu {
+    display: block;
+    width: 100%;
+  }
+  body header .nav-navbrand #menu .sidenav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
+    height: 100px;
+    width: 100%;
+    position: relative;
+    background-color: transparent;
+    -webkit-transition: .5s;
+    transition: .5s;
+    padding-top: 60px;
+  }
+  body header .nav-navbrand #menu .sidenav #rede-social {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
+    width: 300px;
+    margin-left: 200px;
+  }
+  body header .nav-navbrand #menu .sidenav #rede-social a {
+    margin-top: 0;
+    padding-left: 25px;
+  }
+  body header .nav-navbrand #menu .sidenav #sidenav a {
+    padding: 10px 10px 10px 32px;
+    text-decoration: none;
+    font-size: 1rem;
+    color: #818181;
+    display: block;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    font-weight: 300;
+    font-family: "Ubuntu", sans-serif;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+  body header .nav-navbrand #menu .sidenav .menu a:hover {
+    color: #47bcdc;
+  }
+  body header .nav-navbrand .container label {
+    display: none;
+  }
+  body main .container-planos h1 {
+    font-size: 3rem;
+  }
+  body main .container-planos .planos .container {
+    margin: 0 auto;
+  }
+  body main .container-planos .planos .container .plano {
+    margin: 15px;
+    width: 300px;
+    padding: 10px;
+    width: 100%;
+    -webkit-box-shadow: 5px 5px 10px #9b9b9b;
+            box-shadow: 5px 5px 10px #9b9b9b;
+  }
 }
 /*# sourceMappingURL=style.css.map */

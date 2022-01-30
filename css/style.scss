@@ -147,7 +147,7 @@ $secondary: #ea38a3;
     border: 2px solid $azul1;
     border-radius: 10px;
     background: transparent;
-    color: $gray;
+    color: $white;
     font-family: $ff-overpass;
     font-size: 1rem;
     margin-top: 10px;
@@ -425,6 +425,8 @@ main{
                 #servico1, #servico2, #servico3, #servico4, #servico5, #servico6{
                     height:200px;
                     filter: blur(3px);
+                    background-repeat: no-repeat;
+                    background-size: cover;
                         &:hover{
                             filter: blur(0);
                             h3{ 
@@ -470,34 +472,28 @@ main{
                 }
                 #servico1{
                     background-image:url("/img/img-higieniza.jpg");
-                    background-repeat: no-repeat;
-                    background-size: cover;
+                    
                     }
                 #servico2{
                     background-image:url("/img/img-higieniza.jpg");
-                    background-repeat: no-repeat;
-                    background-size: cover;
-                    }/*
+                    
+                    }
                 #servico3{
                     background-image:url("/img/img-higieniza.jpg");
-                    background-repeat: no-repeat;
-                    background-size: cover;
+                    
                     }
                 #servico4{
                     background-image:url("/img/img-higieniza.jpg");
-                    background-repeat: no-repeat;
-                    background-size: cover;
+                    
                     }
                 #servico5{
                     background-image:url("/img/img-higieniza.jpg");
-                    background-repeat: no-repeat;
-                    background-size: cover;
+                   
                     }
                 #servico6{
                     background-image:url("/img/img-higieniza.jpg");
-                    background-repeat: no-repeat;
-                    background-size: cover;
-                    }*/
+                    
+                    }
                 
             }
         }
@@ -540,7 +536,6 @@ main{
                 perspective: 1000px;
                 
 
-                height: fit-content;
                 background: $black;
                 width: 80%;
                 display: flex;
@@ -697,3 +692,254 @@ footer{
         }
     }
 
+@media (min-width:768px){
+    body{
+        header{
+            height: 60vh;
+        
+            .nav-navbrand{
+                height:100px;
+                margin-top:20px;
+            
+        
+            .nav-brand{
+                
+                margin: 20px 0 0 20px;
+                font-size: 2rem;
+                letter-spacing: 7px;
+        
+                small{
+                    font-size:.9rem;
+                }
+                
+            }
+            }
+            
+        
+            
+            .capa{
+                
+                background-position: -200px -10px;
+                
+            }
+            
+        }
+
+        main{
+
+            .wrap{
+                margin-top: 200px;
+                .container-servicos{
+                    h1{
+                        font-size: 3rem;
+                        
+                        margin-bottom: 60px;
+                    }
+                    .servico{
+                        display: grid;
+                        grid-template-columns: 1fr 1fr;
+                        gap:20px;
+                        width:80%;
+                        margin: 0 auto;
+                        margin-bottom: 100px;
+                        
+        
+                        
+                        #servico1, #servico2, #servico3, #servico4, #servico5, #servico6{
+                            height:200px;
+                            filter: blur(3px);
+                            transition: .2s;
+                            
+                                &:hover{
+                                    filter: blur(0);
+                                    border: 1px solid $white;
+                                    h3{ 
+        
+                                        opacity: 1;
+                                    }
+                                }
+                                
+                            .img-serv{
+                                
+                                border:0;
+                                  
+                            }
+                            
+                        }
+                        
+                        
+                    }
+                }
+            }
+
+
+
+            .container-planos{
+        
+                h1{
+                    
+                    font-size:3rem;
+                         
+                }
+                .planos{
+                    height: fit-content;
+                    width: 100%;
+                    margin: 0 auto;
+                    margin-bottom: 50px;
+                    display:flex;
+                    flex-direction: row;
+
+        
+                        .container{
+                            display: flex;
+                            flex-direction: row;
+                            
+                            padding:30px;
+                          
+                    
+        
+                    .plano{
+                        margin:5px;
+                        width: 300px;
+                        
+                        
+                        
+                        max-height: 550px;
+                        height: 550px;
+                        
+                        width: 80%;
+                        
+                        padding:10px;
+                        width:100%;
+                        box-shadow: 5px 5px 10px $gray;
+                    }
+                         
+                }
+                }
+                    
+                }
+
+
+        }
+        
+
+    }   
+}
+
+@media (min-width:1024px){
+
+    body{
+
+        
+
+
+            header{
+
+                
+
+                .nav-navbrand{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: flex-start;
+
+                    .container{
+                        width:0;
+                    }
+
+                    #menu{
+                        display: block;
+                        width: 100%;
+
+                        .sidenav{
+                            display: flex;
+                            justify-content: end;
+                            height: 100px;
+                            width: 100%;
+                            position: relative;
+                            
+                            background-color: transparent;
+                            transition: .5s;
+                            padding-top: 60px;
+                    
+                                #rede-social{
+                                    display: flex;
+                                    justify-content: end;
+                                    width:300px;
+                                    margin-left:200px;
+                                    a{
+                                        margin-top: 0;
+                                        padding-left: 25px;
+
+                                    }
+                                }
+                            
+                    
+                        
+                          
+                          #sidenav a {
+                            padding: 10px 10px 10px 32px;
+                            text-decoration: none;
+                            font-size: 1rem;
+                            color: #818181;
+                            display: block;
+                            transition: 0.3s;
+                            font-weight: 300;
+                            font-family: $ff-ubuntu;
+                            text-transform: uppercase;
+                            cursor: pointer;
+                          }
+                          
+                          .menu a:hover {
+                            color: $azul1;
+                          }
+                        }
+                    } 
+
+                    .container{
+
+                        
+                        label{
+                            display:none;
+                        }
+                    }
+                }
+            }
+        main{
+
+            .container-planos{
+                
+                h1{
+                    
+                    font-size:3rem;
+                        
+                }
+                .planos{
+                    
+
+
+                        .container{
+                            margin:0 auto;
+                            
+                        
+                    
+
+                    .plano{
+                        margin:15px;
+                        width: 300px;
+                        
+                        
+                        
+                        
+                        padding:10px;
+                        width:100%;
+                        box-shadow: 5px 5px 10px $gray;
+                    }
+                        
+                }
+                }
+                    
+                }
+        }
+    }
+
+}

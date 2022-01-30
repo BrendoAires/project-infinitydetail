@@ -13,20 +13,60 @@ const element = document.getElementById("mySidenav");
 
 
 
+/*
 
-const divs = document.getElementById("container");
-const div = querySelectorAll("#div div");
-
-let idx = 0;
-
-function carrossel(){
-    idx ++;
-
-    if (idx > div.length - 1){
-        idx = 0;
+function moveToSelected(element) {
+    if (element == "next") {
+      var selected = $(".selected").next();
+    } else if (element == "prev") {
+      var selected = $(".selected").prev();
+    } else {
+      var selected = element;
     }
-
-    divs.style.transform = `tranlateX($-idx * 300)px`;
-
-}
-setInterval(carrossel, 1800);
+  
+    var next = $(selected).next();
+    var prev = $(selected).prev();
+    var prevSecond = $(prev).prev();
+    var nextSecond = $(next).next();
+  
+    $(selected).removeClass().addClass("selected");
+  
+    $(prev).removeClass().addClass("prev");
+    $(next).removeClass().addClass("next");
+  
+    $(nextSecond).removeClass().addClass("nextRightSecond");
+    $(prevSecond).removeClass().addClass("prevLeftSecond");
+  
+    $(nextSecond).nextAll().removeClass().addClass("hideRight");
+    $(prevSecond).prevAll().removeClass().addClass("hideLeft");
+  }
+  
+  // Eventos teclado
+  $(document).keydown(function (e) {
+    switch (e.which) {
+      case 37: // left
+        moveToSelected("prev");
+        break;
+  
+      case 39: // right
+        moveToSelected("next");
+        break;
+  
+      default:
+        return;
+    }
+    e.preventDefault();
+  });
+  
+  $("#carousel div").click(function () {
+    moveToSelected($(this));
+  });
+  
+  $("#prev").click(function () {
+    moveToSelected("prev");
+  });
+  
+  $("#next").click(function () {
+    moveToSelected("next");
+  });
+  */

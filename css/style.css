@@ -552,9 +552,13 @@ main .container-planos .planos .container {
           transform: translateX(0);
 }
 
-main .container-planos .planos .container .plano1, main .container-planos .planos .container .plano2, main .container-planos .planos .container .plano3 {
+main .container-planos .planos .container .plano {
+  width: 300px;
   height: -webkit-fit-content;
   height: -moz-fit-content;
+  height: fit-content;
+  -webkit-perspective: 1000px;
+          perspective: 1000px;
   height: fit-content;
   background: #0a0f0c;
   width: 80%;
@@ -575,7 +579,43 @@ main .container-planos .planos .container .plano1, main .container-planos .plano
           box-shadow: 5px 5px 10px #9b9b9b;
 }
 
-main .container-planos .planos .container .plano1 .titulo-plano, main .container-planos .planos .container .plano2 .titulo-plano, main .container-planos .planos .container .plano3 .titulo-plano {
+main .container-planos .planos .container .card {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  -webkit-transition: -webkit-transform 0.6s;
+  transition: -webkit-transform 0.6s;
+  transition: transform 0.6s;
+  transition: transform 0.6s, -webkit-transform 0.6s;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+main .container-planos .planos .container .card:hover {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+main .container-planos .planos .container .card .front-card, main .container-planos .planos .container .card .back-card {
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+
+main .container-planos .planos .container .card .front-card {
+  color: black;
+}
+
+main .container-planos .planos .container .card .back-card {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+main .container-planos .planos .container .titulo-plano {
   font-size: 2rem;
   font-weight: 900;
   text-align: center;
@@ -584,15 +624,15 @@ main .container-planos .planos .container .plano1 .titulo-plano, main .container
   color: #0071ad;
 }
 
-main .container-planos .planos .container .plano1 .preco-plano, main .container-planos .planos .container .plano2 .preco-plano, main .container-planos .planos .container .plano3 .preco-plano {
+main .container-planos .planos .container .preco-plano {
   font-size: 1.5rem;
   font-weight: 900;
   color: #47bcdc;
 }
 
-main .container-planos .planos .container .plano1 .info-plano, main .container-planos .planos .container .plano2 .info-plano, main .container-planos .planos .container .plano3 .info-plano {
+main .container-planos .planos .container .info-plano {
   margin-top: 50px;
-  color: #9b9b9b;
+  color: white;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -602,16 +642,16 @@ main .container-planos .planos .container .plano1 .info-plano, main .container-p
           flex-direction: column;
 }
 
-main .container-planos .planos .container .plano1 .info-plano ul, main .container-planos .planos .container .plano2 .info-plano ul, main .container-planos .planos .container .plano3 .info-plano ul {
+main .container-planos .planos .container .info-plano ul {
   list-style: disc;
 }
 
-main .container-planos .planos .container .plano1 .info-plano ul li, main .container-planos .planos .container .plano2 .info-plano ul li, main .container-planos .planos .container .plano3 .info-plano ul li {
+main .container-planos .planos .container .info-plano ul li {
   margin-left: 20px;
   padding-bottom: 20px;
 }
 
-main .container-planos .planos .container .plano1 .info-plano .saibamais, main .container-planos .planos .container .plano2 .info-plano .saibamais, main .container-planos .planos .container .plano3 .info-plano .saibamais {
+main .container-planos .planos .container .info-plano .saibamais {
   width: 100%;
   height: 50px;
   -webkit-box-align: center;
@@ -625,7 +665,7 @@ main .container-planos .planos .container .plano1 .info-plano .saibamais, main .
           justify-content: center;
 }
 
-main .container-planos .planos .container .plano1 .info-plano .saibamais .button, main .container-planos .planos .container .plano2 .info-plano .saibamais .button, main .container-planos .planos .container .plano3 .info-plano .saibamais .button {
+main .container-planos .planos .container .info-plano .saibamais .button {
   width: 100px;
   height: 40px;
   outline: 0;
@@ -642,7 +682,7 @@ main .container-planos .planos .container .plano1 .info-plano .saibamais .button
   font-size: 1rem;
 }
 
-main .container-planos .planos .container .plano1 .info-plano .saibamais .button:hover, main .container-planos .planos .container .plano2 .info-plano .saibamais .button:hover, main .container-planos .planos .container .plano3 .info-plano .saibamais .button:hover {
+main .container-planos .planos .container .info-plano .saibamais .button:hover {
   background: #47bcdc;
 }
 /*# sourceMappingURL=style.css.map */

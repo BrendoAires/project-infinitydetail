@@ -62,7 +62,7 @@ $secondary: #ea38a3;
     border-bottom: 2px solid $gray;
     outline:0;
     font-size:1.3rem;
-    margin-top: 20px;
+    margin-top: 25px;
     color: $white;
     padding: 7px 0;
     background: transparent;
@@ -102,7 +102,7 @@ $secondary: #ea38a3;
     top:20px;
 }
 .telefone__class{
-    top:80px;
+    top:60px;
 }
 
 
@@ -118,7 +118,7 @@ $secondary: #ea38a3;
     }
 
     ~ .nome__class{
-        top:30px;
+        top:20px;
     }
     ~ .telefone__class{
         top:90px;

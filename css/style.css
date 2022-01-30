@@ -388,6 +388,20 @@ header .sidenav {
   padding-top: 60px;
 }
 
+header .sidenav #rede-social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+header .sidenav #rede-social a {
+  margin-top: 40px;
+  padding: 10px;
+}
+
 header .sidenav a {
   padding: 10px 10px 10px 32px;
   text-decoration: none;

@@ -663,6 +663,22 @@ main .container-planos .planos .container .info-plano .saibamais {
           justify-content: center;
 }
 
+main #onde {
+  width: 90%;
+  height: 200px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+
+main #onde h1 {
+  text-align: center;
+  font-size: 2rem;
+  color: white;
+  margin-bottom: 20px;
+  font-family: "Overpass", sans-serif;
+  font-weight: 600;
+}
+
 .button {
   width: 100px;
   height: 40px;

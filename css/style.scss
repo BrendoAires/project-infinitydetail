@@ -287,7 +287,8 @@ header{
     }
     label{
         cursor: pointer;
-        position:absolute;
+        position:fixed;
+        z-index: 1000;
         display: block;
         right:0;
         height: 22px;
@@ -465,7 +466,7 @@ main{
                     background-image:url("/img/img-higieniza.jpg");
                     background-repeat: no-repeat;
                     background-size: cover;
-                    }
+                    }/*
                 #servico3{
                     background-image:url("/img/img-higieniza.jpg");
                     background-repeat: no-repeat;
@@ -485,7 +486,7 @@ main{
                     background-image:url("/img/img-higieniza.jpg");
                     background-repeat: no-repeat;
                     background-size: cover;
-                    }
+                    }*/
                 
             }
         }
@@ -606,24 +607,7 @@ main{
                         align-items: center;
                         display: flex;
                         justify-content: center;
-                   .button{
-                        width:100px;
-                        height:40px;
-                        outline: 0;
-                        border: 1px solid $azul1;
-                        background: transparent;
-                        color: $white;
-                        text-align: center;
-                        border-radius: 10px;
-                        transition: .3s;
-                        font-family: $ff-overpass;
-                        text-transform: uppercase;
-                        font-weight: 300;
-                        font-size: 1rem;
-                        &:hover{
-                            background: $azul1;
-                        }
-                    }
+                   
                 }
                 }
 
@@ -639,5 +623,23 @@ main{
 
 
 
+    .button{
+        width:100px;
+        height:40px;
+        outline: 0;
+        border: 1px solid $azul1;
+        background: transparent;
+        color: $white;
+        text-align: center;
+        border-radius: 10px;
+        transition: .3s;
+        font-family: $ff-overpass;
+        text-transform: uppercase;
+        font-weight: 300;
+        font-size: 1rem;
+        &:hover{
+            background: $azul1;
+        }
+    }
 
  

@@ -7,6 +7,10 @@ const element = document.getElementById("mySidenav");
         document.getElementById("mySidenav").style.width = "0"
     }else{
     document.getElementById("mySidenav").style.width = "200px";
+    
+
+
+   
   }
     })
 

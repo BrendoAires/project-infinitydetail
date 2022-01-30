@@ -306,7 +306,8 @@ header .container #checkbox-menu {
 
 header .container label {
   cursor: pointer;
-  position: absolute;
+  position: fixed;
+  z-index: 1000;
   display: block;
   right: 0;
   height: 22px;
@@ -423,6 +424,27 @@ main .wrap .container-servicos .servico {
   display: grid;
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
+  /*
+                #servico3{
+                    background-image:url("/img/img-higieniza.jpg");
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    }
+                #servico4{
+                    background-image:url("/img/img-higieniza.jpg");
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    }
+                #servico5{
+                    background-image:url("/img/img-higieniza.jpg");
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    }
+                #servico6{
+                    background-image:url("/img/img-higieniza.jpg");
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    }*/
 }
 
 main .wrap .container-servicos .servico #servico1, main .wrap .container-servicos .servico #servico2, main .wrap .container-servicos .servico #servico3, main .wrap .container-servicos .servico #servico4, main .wrap .container-servicos .servico #servico5, main .wrap .container-servicos .servico #servico6 {
@@ -484,30 +506,6 @@ main .wrap .container-servicos .servico #servico1 {
 }
 
 main .wrap .container-servicos .servico #servico2 {
-  background-image: url("/img/img-higieniza.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-main .wrap .container-servicos .servico #servico3 {
-  background-image: url("/img/img-higieniza.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-main .wrap .container-servicos .servico #servico4 {
-  background-image: url("/img/img-higieniza.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-main .wrap .container-servicos .servico #servico5 {
-  background-image: url("/img/img-higieniza.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-main .wrap .container-servicos .servico #servico6 {
   background-image: url("/img/img-higieniza.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -665,7 +663,7 @@ main .container-planos .planos .container .info-plano .saibamais {
           justify-content: center;
 }
 
-main .container-planos .planos .container .info-plano .saibamais .button {
+.button {
   width: 100px;
   height: 40px;
   outline: 0;
@@ -682,7 +680,7 @@ main .container-planos .planos .container .info-plano .saibamais .button {
   font-size: 1rem;
 }
 
-main .container-planos .planos .container .info-plano .saibamais .button:hover {
+.button:hover {
   background: #47bcdc;
 }
 /*# sourceMappingURL=style.css.map */

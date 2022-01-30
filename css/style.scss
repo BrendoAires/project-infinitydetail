@@ -290,7 +290,7 @@ header{
         position:fixed;
         z-index: 1000;
         display: block;
-        right:0;
+        right:10px;
         height: 22px;
         width:30px;
         
@@ -342,7 +342,7 @@ header{
         margin:0;
     }
     input[type="checkbox"]:checked ~ label{
-        right:0;
+        right:10px;
     }
     input[type="checkbox"]:checked ~ section{
         
@@ -626,7 +626,7 @@ main{
             width: 90%;
             height:200px;
             margin: 0 auto;
-            margin-bottom: 50px;
+            margin-bottom: 100px;
             h1{
                 text-align: center;
                 font-size: 2rem;
@@ -638,8 +638,36 @@ main{
 
         }
 
+        
+
 }
 
+footer{
+    background: $black;
+    height:100px;
+    width:100%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    
+    .atribuicao{
+        font-family: $ff-overpass;
+        font-size: .8rem;
+        color:$white;
+        text-align: center;
+        .fab{
+            padding: 5px;
+            transition: .4s;
+            &:hover{
+                color:$white;
+            }
+        }
+        a{
+            color:$azul1
+        }
+    }
+
+}
 
 
     .button{

@@ -309,7 +309,7 @@ header .container label {
   position: fixed;
   z-index: 1000;
   display: block;
-  right: 0;
+  right: 10px;
   height: 22px;
   width: 30px;
 }
@@ -366,7 +366,7 @@ header input[type="checkbox"]:checked ~ nav {
 }
 
 header input[type="checkbox"]:checked ~ label {
-  right: 0;
+  right: 10px;
 }
 
 header input[type="checkbox"]:checked ~ section {
@@ -667,7 +667,7 @@ main #onde {
   width: 90%;
   height: 200px;
   margin: 0 auto;
-  margin-bottom: 50px;
+  margin-bottom: 100px;
 }
 
 main #onde h1 {
@@ -677,6 +677,42 @@ main #onde h1 {
   margin-bottom: 20px;
   font-family: "Overpass", sans-serif;
   font-weight: 600;
+}
+
+footer {
+  background: #0a0f0c;
+  height: 100px;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+footer .atribuicao {
+  font-family: "Overpass", sans-serif;
+  font-size: .8rem;
+  color: white;
+  text-align: center;
+}
+
+footer .atribuicao .fab {
+  padding: 5px;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+footer .atribuicao .fab:hover {
+  color: white;
+}
+
+footer .atribuicao a {
+  color: #47bcdc;
 }
 
 .button {

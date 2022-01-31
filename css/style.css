@@ -922,6 +922,7 @@ footer .atribuicao a {
   }
   body main .container-planos .planos .container {
     margin: 0 auto;
+    padding: 0;
   }
   body main .container-planos .planos .container .plano {
     margin: 15px;
@@ -942,13 +943,13 @@ footer .atribuicao a {
     background-position: -200px -100px;
   }
   body header .nav-navbrand .nav-brand {
-    font-size: 4rem;
+    font-size: 3rem;
   }
   body header .nav-navbrand .nav-brand small {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
   }
   body header .nav-navbrand .menu .sidenav a {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
   body main .wrap .container-servicos {
     margin-bottom: 300px;

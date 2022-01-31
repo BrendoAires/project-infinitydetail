@@ -886,6 +886,9 @@ footer .atribuicao a {
     margin-top: 0;
     padding-left: 25px;
   }
+  body header .nav-navbrand #menu .sidenav #rede-social a .fab {
+    font-size: 25px;
+  }
   body header .nav-navbrand #menu .sidenav #sidenav a {
     padding: 10px 10px 10px 32px;
     text-decoration: none;

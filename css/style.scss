@@ -871,14 +871,14 @@ footer{
                                 #rede-social{
                                     display: flex;
                                     justify-content: end;
-                                    width:300px;
+                                    width:250px;
                                     margin-left:200px;
                                     a{
                                         margin-top: 0;
-                                        padding-left: 25px;
+                                        padding-left: 15px;
 
                                         .fab{
-                                            font-size:25px;
+                                            font-size:20px;
                                         }
 
                                     }
@@ -975,8 +975,14 @@ footer{
                     }
                 }
                 .menu{
-                    .sidenav a{
-                        font-size:1rem;
+                    .sidenav {
+                        #rede-social{
+                            width:250px;
+                            margin-left: 150px;
+                        }
+                        a{
+                            font-size:1rem;
+                        }
                     }
                 }
             }

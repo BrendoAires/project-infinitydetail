@@ -888,15 +888,15 @@ footer .atribuicao a {
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: end;
-    width: 300px;
+    width: 250px;
     margin-left: 200px;
   }
   body header .nav-navbrand #menu .sidenav #rede-social a {
     margin-top: 0;
-    padding-left: 25px;
+    padding-left: 15px;
   }
   body header .nav-navbrand #menu .sidenav #rede-social a .fab {
-    font-size: 25px;
+    font-size: 20px;
   }
   body header .nav-navbrand #menu .sidenav #sidenav a {
     padding: 10px 10px 10px 32px;
@@ -947,6 +947,10 @@ footer .atribuicao a {
   }
   body header .nav-navbrand .nav-brand small {
     font-size: 1.2rem;
+  }
+  body header .nav-navbrand .menu .sidenav #rede-social {
+    width: 250px;
+    margin-left: 150px;
   }
   body header .nav-navbrand .menu .sidenav a {
     font-size: 1rem;

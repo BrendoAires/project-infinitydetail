@@ -476,6 +476,7 @@ main .wrap .container-servicos .servico #servico1 .img-serv, main .wrap .contain
           filter: blur(3px);
   -webkit-transition: .2s ease all;
   transition: .2s ease all;
+  text-align: center;
 }
 
 main .wrap .container-servicos .servico #servico1 .img-serv:hover, main .wrap .container-servicos .servico #servico2 .img-serv:hover, main .wrap .container-servicos .servico #servico3 .img-serv:hover, main .wrap .container-servicos .servico #servico4 .img-serv:hover, main .wrap .container-servicos .servico #servico5 .img-serv:hover, main .wrap .container-servicos .servico #servico6 .img-serv:hover {

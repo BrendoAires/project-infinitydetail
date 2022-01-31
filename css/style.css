@@ -703,15 +703,16 @@ footer {
 
 footer .atribuicao {
   font-family: "Overpass", sans-serif;
-  font-size: .8rem;
+  font-size: 1rem;
   color: white;
   text-align: center;
 }
 
 footer .atribuicao .fab {
-  padding: 5px;
+  padding: 10px;
   -webkit-transition: .4s;
   transition: .4s;
+  font-size: 1.7rem;
 }
 
 footer .atribuicao .fab:hover {

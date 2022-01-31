@@ -29,9 +29,6 @@
 
 /*-----Formulario Header-------*/
 
-$primary: #ff0043;
-$secondary: #ea38a3;
-
 
 .form{
     display:flex;
@@ -657,12 +654,13 @@ footer{
     
     .atribuicao{
         font-family: $ff-overpass;
-        font-size: .8rem;
+        font-size: 1rem;
         color:$white;
         text-align: center;
         .fab{
-            padding: 5px;
+            padding: 10px;
             transition: .4s;
+            font-size:1.7rem;
             &:hover{
                 color:$white;
             }

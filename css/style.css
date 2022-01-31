@@ -37,7 +37,7 @@
   border-bottom: 2px solid #9b9b9b;
   outline: 0;
   font-size: 1.3rem;
-  margin-top: 25px;
+  margin-top: 45px;
   color: white;
   padding: 7px 0;
   background: transparent;
@@ -67,11 +67,11 @@
 }
 
 .form__field:placeholder-shown ~ .nome__class {
-  top: 50px;
+  top: 70px;
 }
 
 .form__field:placeholder-shown ~ .telefone__class {
-  top: 110px;
+  top: 155px;
 }
 
 .form__label {
@@ -85,11 +85,11 @@
 }
 
 .nome__class {
-  top: 20px;
+  top: 45px;
 }
 
 .telefone__class {
-  top: 60px;
+  top: 135px;
 }
 
 .form__field:focus {
@@ -113,11 +113,11 @@
 }
 
 .form__field:focus ~ .nome__class {
-  top: 20px;
+  top: 35px;
 }
 
 .form__field:focus ~ .telefone__class {
-  top: 90px;
+  top: 125px;
 }
 
 .form__field:required, .form__field:invalid {

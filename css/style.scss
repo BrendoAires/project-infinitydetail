@@ -62,7 +62,7 @@ $secondary: #ea38a3;
     border-bottom: 2px solid $gray;
     outline:0;
     font-size:1.3rem;
-    margin-top: 25px;
+    margin-top: 45px;
     color: $white;
     padding: 7px 0;
     background: transparent;
@@ -78,11 +78,12 @@ $secondary: #ea38a3;
     }
 
     &:placeholder-shown ~ .nome__class{
-        top: 50px;
+        top: 70px;
+        
     }
 
     &:placeholder-shown ~ .telefone__class{
-        top: 110px;
+        top: 155px;
     }
 
 
@@ -99,10 +100,10 @@ $secondary: #ea38a3;
         
 }
 .nome__class{
-    top:20px;
+    top:45px;
 }
 .telefone__class{
-    top:60px;
+    top:135px;
 }
 
 
@@ -118,10 +119,10 @@ $secondary: #ea38a3;
     }
 
     ~ .nome__class{
-        top:20px;
+        top:35px;
     }
     ~ .telefone__class{
-        top:90px;
+        top:125px;
     }
     padding-bottom: 6px;
     font-weight: 700;

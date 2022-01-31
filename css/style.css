@@ -960,11 +960,11 @@ footer .atribuicao a {
   body main .wrap .container-servicos .servico {
     -ms-grid-columns: 1fr 1fr 1fr;
         grid-template-columns: 1fr 1fr 1fr;
-    height: 800px;
-    gap: 60px;
+    height: 600px;
+    gap: 50px;
   }
   body main .wrap .container-servicos .servico #servico1, body main .wrap .container-servicos .servico #servico2, body main .wrap .container-servicos .servico #servico3, body main .wrap .container-servicos .servico #servico4, body main .wrap .container-servicos .servico #servico5, body main .wrap .container-servicos .servico #servico6 {
-    height: 400px;
+    height: 300px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;

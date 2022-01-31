@@ -997,12 +997,12 @@ footer{
 
                     .servico{
                         grid-template-columns: 1fr 1fr 1fr;
-                        height:800px;
-                        gap:60px;
+                        height:600px;
+                        gap:50px;
                         
 
                         #servico1, #servico2, #servico3, #servico4, #servico5, #servico6{
-                            height:400px;
+                            height:300px;
                             display: flex;
                             align-items: center;
                             justify-content: center;
